@@ -1,0 +1,360 @@
+html,body{
+    position: relative ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #000;
+    color: white;
+    }
+    
+    header{
+        width: 100%;
+        height: 10vh;
+       
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        background-color: black;
+        color: white;
+       
+    
+    }
+    nav{
+        width: 50%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      
+    }
+
+    .fixture{
+        background-color: #000;
+    }
+
+
+    .fixture-container{
+        margin: 0rem 1rem 0rem 1rem;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        background-color: black;
+        color: white;
+    }
+
+    .fffixture{
+        padding: 1.5rem;
+    }
+
+
+    
+    .gameUI{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        height: 90vh;
+        margin: 0rem 8rem 0rem 8rem;
+        
+    }
+    .fixture{
+        flex: 1;
+        
+    }
+    .center{
+        display: flex;
+        flex-direction: column;
+        flex: 3;
+        background-image: url(../assets/osimen.jpeg);
+        background-size: cover;
+       
+
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+    }
+   
+   span{
+    color:yellow;
+   }
+
+
+    .randisplay{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        height: 50%;
+        
+        margin: 4rem auto 0rem auto;
+        padding: 0rem 2rem 0rem 2rem;
+       
+
+        
+    }
+
+    .team{
+        font-size: 2rem;
+        border: solid 1px black;
+        cursor: pointer;
+
+
+    }
+
+    .selection{
+        width: 50%;
+        height: 10%;
+        text-align: center;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem auto 0rem auto;
+        padding: 0rem 2rem 0rem 2rem;
+    }
+
+    .select{
+        width: 50%;
+        height: 10%;
+        text-align: center;
+        
+      
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0rem auto 0rem auto;
+        padding: 0rem 2rem 0rem 2rem;
+    }
+
+    .btn{
+        margin: 2rem auto 0rem auto;
+    }
+    button{
+        padding: 5px 25px 5px 25px ;
+    }
+
+    .loader-container{
+        width: 60%;
+        height: 100vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background: #000;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .loader-container-show{
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        background: #000;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .spinner {
+        width: 64px;
+        height: 64px;
+        border: 8px solid;
+        border-color: #3d5af1 transparent #3d5af1 transparent;
+        border-radius: 50%;
+        animation: spin-anim 1.2s linear infinite;
+    }
+    
+    @keyframes spin-anim {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    .resultwin{
+        background-image: url(../assets/win-confetti.gif);
+        background-size: cover;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .resultlose{
+        background-image: url(../assets/willy-wonka-and-the-chocolate-factory-gene-wilder.gif);
+        background-size: cover;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        opacity: 1;
+    }
+
+    .tie{
+        background-image: url(../assets/mark-wahlberg-wahlberg.gif);
+        background-size: auto;
+        width: 60%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        z-index: 1;
+        opacity: 1;
+    }
+
+
+    .paragraph{
+        display: flex;
+        flex-direction: column;
+       justify-content: center ;
+        
+        height: 30vh;
+        width: 50vw;
+        margin: auto;
+    }
+
+    .sub-paragraph{
+        display: flex;
+        flex-direction: column;
+       justify-content: center ;
+        
+        height: 30vh;
+        width: 50vw;
+        margin: auto;
+    }
+
+    @media (max-width: 760px) {
+
+        body, html{
+            overflow-x: hidden;
+            position: relative;
+           }
+    
+           
+    
+           .burger-menu{
+            display: inline-block;
+            
+            margin-top: -1.9rem ;
+            margin-right: 2.5rem ;
+            z-index: 10;
+    
+        }
+
+        .burger-menu > div{
+            width: 50px;
+            height: 5px;
+            background-color: white;
+            margin-top: 0.5rem;
+            border-radius: 10px;
+           
+          
+        }
+
+    .paragraph{
+        margin: auto;
+    }
+    .sub-paragraph{
+        margin: auto;
+    }
+    
+        
+        nav{
+        
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 50%;
+            background:black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            transform: translateX(100%);
+            transition: transform 0.5s ease-out;
+            z-index: 10;
+           }
+
+           .nav-active{
+            transform: translateX(0%)
+           }
+
+
+       
+
+        
+
+           .colored-section{
+            margin-top: -5rem;
+        }
+    
+        .toggle .burger1 {
+            transform: rotate(-45deg) translate(-5px, 5px);
+            z-index: 10;
+          }
+          
+          .toggle .burger2 {
+            opacity: 0;
+          }
+          
+          .toggle .burger3 {
+            transform: rotate(+45deg) translate(-5px, -5px);
+            z-index: 10;
+          }
+    }
+
+    @media (max-width: 460px){
+        .fixture{
+            display: none;
+        }
+
+        .yourselection{
+            margin-top: 1rem ;
+            margin-bottom: 1rem ;
+        }
+
+       .resultwin{
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+       } 
+
+       .resultlose{
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+       } 
+
+       .tie{
+        background-size: auto;
+        width: 100%;
+        height: 100vh;
+       } 
+        
+       .loader-container-show{
+        width: 100%;
+        height: 100vh
+       }
+        
+        
+        
+    }
